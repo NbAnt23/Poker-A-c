@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Accounting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Poker Accounting!!!</h1>
+    </header>
+
+    <main>
+        <form id="playerForm">
+            <input type="text" id="playerName" placeholder="Enter player name" required>
+            <input type="number" id="buyIn" placeholder="Enter player Buy In (₹)" required>
+            <button type="submit">Add Player</button>
+        </form>
+
+        <table id="playerTable">
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Buy In (₹)</th>
+                    <th>Chips Left (₹)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table body will be filled by JavaScript -->
+            </tbody>
+        </table>
+
+        <button id="calculateSettlements" class="action-btn">Calculate Settlements</button>
+
+        <table id="settlementTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Settlement table body will be filled by JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; Created by Nishant Baid. All rights reserved LOL</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
